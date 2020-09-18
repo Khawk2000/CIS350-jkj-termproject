@@ -4,7 +4,7 @@ Hold a team meeting at least once a week in some format.  Copy the following tem
 
 ## Meeting minutes template
 
-Team name:
+Team name: JKJ
 
 Members present:
 

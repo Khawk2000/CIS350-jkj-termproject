@@ -1,6 +1,6 @@
 # JKJ
 
-Project description (~1 paragraph)
+Homework Reminder App (~1 paragraph description)
 
 ## Team Members and Roles
 

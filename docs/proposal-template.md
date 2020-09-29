@@ -1,6 +1,6 @@
-Team name:
+Team name: JKJ
 
-Team members:
+Team members: Keegan Hawkins, Jon Hoeve, Jacob Stone
 
 # Introduction
 

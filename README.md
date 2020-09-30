@@ -6,7 +6,7 @@ Homework Reminder App (~1 paragraph description)
 
 * [Keegan Hawkins](https://github.com/Khawk2000/CIS350-HW2-Hawkins.git) (Role 1, Role 2)
 * [Jon Hoeve](https://github.com/hoevejo/CIS350-HW2-Hoeve)(Role 3, Role 4)
-* Jacob Stonehttps://github.com/stoneyboi/CIS350-HW2-Stone.git) (Role 5, Role 6)
+* [Jacob Stone](https://github.com/stoneyboi/CIS350-HW2-Stone.git) (Role 5, Role 6)
 
 ## Prerequisites
 

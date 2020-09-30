@@ -7,8 +7,10 @@ Team members: Keegan Hawkins, Jon Hoeve, Jacob Stone
 (In 2-4 paragraphs, describe your project concept)
 
 # Anticipated Technologies
-
-(What technologies are needed to build this project)
+* Android command line tools
+* Git repository
+* JDK
+* App design tool for UI
 
 # Method/Approach
 

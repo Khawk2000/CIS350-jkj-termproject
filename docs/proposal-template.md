@@ -22,5 +22,7 @@ The user can add tasks, delete or change the tasks. The tasks themselves can be 
 (Figure out what your major milestones for this project will be, including how long you anticipate it *may* take to reach that point)
 
 # Anticipated Problems
-
-(Describe any problems you foresee that you will need to overcome)
+* Finishing the project and keeping all our intended features
+* Getting our app to work on a mobile device and not just on a GUI
+* Getting everything to look good and how we want it for a nice clean user friendly appearance
+* Getting the notification feature to work

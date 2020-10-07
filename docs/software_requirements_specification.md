@@ -11,9 +11,9 @@ The purpose of this document is to outline our baseline requirements for this pr
   1. <Functional Requirement 2>
   1. <And so on>
  1. Creating Tasks
-  1. <Functional Requirement 1>
-  1. <Functional Requirement 2>
-  1. <And so on>
+  1. The app shall be able to take a user inputted name of assignment.
+  1. The app shall take a user inputted due date of assignment.
+  1. The user shall be able to add an importance level to each assignment.
  
 # Non-Functional Requirements
  1. <Name of Feature 1>

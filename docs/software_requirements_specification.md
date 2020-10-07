@@ -3,7 +3,7 @@
 your SRS>
 # Functional Requirements
  1. <Notification System>
-  1. <Functional Requirement 1>
+   1. <Functional Requirement 1>
   1. <Functional Requirement 2>
   1. <And so on>
  1. <Agenda>

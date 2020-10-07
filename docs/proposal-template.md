@@ -18,11 +18,17 @@ The user can add tasks, delete or change the tasks. The tasks themselves can be 
 
 # Method/Approach
 
-(What is your estimated "plan of attack" for developing this project)
+Our plan of attack for this project is to get a baseline GUI working for the calendar/agenda part. Then once we have that we will split off into our individually assigned tasks and finish the project from there. If one of the assignments is harder than the others then we can help the groupmate assigned with that task in order to finish the project effectively and efficiently.
 
 # Estimated Timeline
 
 (Figure out what your major milestones for this project will be, including how long you anticipate it *may* take to reach that point)
+* Getting a running calendar GUI for agenda (2-3 weeks)
+* Successfully add tasks to the calendar with due dates and times (3-5 days)
+* Being able to tasks if inputed incorrectly (2 days)
+* Being able to checkoff tasks when completed (3-5 days)
+* Create a system that prioritizes tasks based on urgency of due date (2 weeks)
+* Notification system that sends alerts to what tasks need to get done soon (3-4 weeks)
 
 # Anticipated Problems
 * Finishing the project and keeping all our intended features

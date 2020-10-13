@@ -7,9 +7,9 @@ The purpose of this document is to outline our baseline requirements for this pr
   1. <Functional Requirement 2>
   1. <And so on>
  1. Agenda
-  1. <Functional Requirement 1>
-  1. <Functional Requirement 2>
-  1. <And so on>
+  1. A task that is checked off by the user shall be removed from agenda.
+  1. A task that is added by the user shall correspond to the date that was inputed on the agenda.
+  1. The agenda shall display correct tasks based on the day.
  1. Creating Tasks
   1. The app shall be able to take a user inputted name of assignment.
   1. The app shall take a user inputted due date of assignment.
@@ -20,10 +20,10 @@ The purpose of this document is to outline our baseline requirements for this pr
   1. <Non-Functional Requirement 1>
   1. <Non-Functional Requirement 2>
   1. <And so on>
- 1. <Name of Feature 2>
-  1. <Non-Functional Requirement 1>
-  1. <Non-Functional Requirement 2>
-  1. <And so on>
+ 1. Agenda
+  1. The agenda should allow the input of multiple event on a date withough slowing down the app.
+  1. The agenda should be able to process back to back removes or adds of tasks at reliable speed.
+  1. Text boxes asking for task information should pop up in a timely manner from the agenda. 
  1. <Name of Feature 3>
   1. <Non-Functional Requirement 1>
   1. <Non-Functional Requirement 2>

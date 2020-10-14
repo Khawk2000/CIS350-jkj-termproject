@@ -24,7 +24,7 @@ The purpose of this document is to outline our baseline requirements for this pr
   1. The agenda should allow the input of multiple events on a date without slowing down the app.
   1. The agenda should be able to process back to back removes or adds of tasks at reliable speed.
   1. Text boxes asking for task information should pop up in a timely manner from the agenda. 
- 1. <Name of Feature 3>
-  1. <Non-Functional Requirement 1>
-  1. <Non-Functional Requirement 2>
-  1. <And so on>
+ 1. Creating Tasks
+  1. The interface for creating tasks shall be user friendly and easy to use.
+  1. Tasks shall be created in a timely manner upon inputs. 
+  1. Tasks shall be easy to find once created.

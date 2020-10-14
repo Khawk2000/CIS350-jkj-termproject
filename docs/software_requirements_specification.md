@@ -3,9 +3,9 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 # Functional Requirements
  1. Notification System
-  1. <Functional Requirement 1>
-  1. <Functional Requirement 2>
-  1. <And so on>
+  1. THe user shall be notified by the app using the notification system at preset times by the user
+  1. The notification system shall continue to notify the user until the task is complete/deadline passed
+  1. The notification system shall user both haptics and sounds to notify the user
  1. Agenda
   1. A task that is checked off by the user shall be removed from agenda.
   1. A task that is added by the user shall correspond to the date that was inputed on the agenda.
@@ -16,10 +16,10 @@ The purpose of this document is to outline our baseline requirements for this pr
   1. The user shall be able to add an importance level to each assignment.
  
 # Non-Functional Requirements
- 1. <Name of Feature 1>
-  1. <Non-Functional Requirement 1>
-  1. <Non-Functional Requirement 2>
-  1. <And so on>
+ 1. Notification System
+  1. The notification system shall have a unique sound to notify the user
+  1. The notification system shall be visible 
+  1. The notification system will not be turned off once allowed
  1. Agenda
   1. The agenda should allow the input of multiple events on a date without slowing down the app.
   1. The agenda should be able to process back to back removes or adds of tasks at reliable speed.

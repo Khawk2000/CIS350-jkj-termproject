@@ -1,0 +1,29 @@
+  
+# CIS350 Meeting Instructions
+
+Hold a team meeting at least once a week in some format.  
+Copy the following template below into a new document, naming it GVSU-CIS350-TEAMNAME-YYYY-MM-DD
+(replacing TEAMNAME with your team's name and the appropriate date fields).  
+Commit it to this folder, ensuring it is up by each Sunday by 11:59pm.  There should be a unique document for each meeting held.
+
+## Meeting minutes template
+
+Team name: JKJ
+
+Members present: Keegan, Jon, Jacob
+
+Date: 10/14/2020
+
+Time: 10:00am-10:30am
+
+Discussion points:
+
+* Decided on language to use (Java)
+* Ensured everyone was caught up on homework 2
+* Familiarized with git bash and how to update repository
+
+Goals for next week (include responsibilities)
+
+* Plan out what specific features we want
+* Assign responsibilities for those features
+* Fill in above information into project proposa

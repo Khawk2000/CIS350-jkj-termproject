@@ -39,27 +39,48 @@
 #### Use-Cases:
 * Add Task must be initiated before Due date can be assigned. 
 
-### Use Case: Priority Level
+### Use Case: 
+* Priority Level
 #### Actors:
+* 
 #### Description:
+1.
 #### Cross Ref:
+*
 #### Use-Cases:
+*
 
-### Use Case: Remove task
+### Use Case:
+* Remove task
 #### Actors:
+*
 #### Description:
+1.
 #### Cross Ref:
+*
 #### Use-Cases:
+*
 
-### Use Case: Add task
+### Use Case: 
+* Add task
 #### Actors:
+* 
 #### Description:
+1.
 #### Cross Ref:
+*
 #### Use-Cases:
+*
 
-### Use Case: Valid date
+### Use Case: 
+* Valid date
 #### Actors:
+*
 #### Description:
+1.
 #### Cross Ref:
+*
 #### Use-Cases:
+*
+
 

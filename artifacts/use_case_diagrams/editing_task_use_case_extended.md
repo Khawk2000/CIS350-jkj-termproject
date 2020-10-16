@@ -1,28 +1,43 @@
 # Editing Task List Use Case Diagram Extended Syntax
 
-### Use Case: Assignment name
-#### Actors: User
+### Use Case: 
+* Assignment name
+#### Actors: 
+* User
 #### Description: 
 1. The user clicks the Add task button
 1. Dialog box appears
 1. User enters the name of the assignment
-#### Cross Ref: Requires dialog box from the add task function to be opened and a space for name to be assigned.
-#### Use-Cases: Add Task must be initiated before Assignment name can be assigned.
+#### Cross Ref: 
+* Requires dialog box from the add task function to be opened and a space for name to be assigned.
+#### Use-Cases: 
+* Add Task must be initiated before Assignment name can be assigned.
 
-### Use Case: Class name
-#### Actors: User
+### Use Case: 
+* Class name
+#### Actors: 
+* User
 #### Description:
 1. The user clicks the Add task button 
 1. Dialog box appears
 1. User enters the name of the class the assignment is for
-#### Cross Ref: Requires a dialog box from the add task function to input the name of the class the assignment is for.  
-#### Use-Cases: Add Task must be initiated before Class name can be assigned.
+#### Cross Ref: 
+* Requires a dialog box from the add task function to input the name of the class the assignment is for.  
+#### Use-Cases: 
+* Add Task must be initiated before Class name can be assigned.
 
-### Use Case: Due date
+### Use Case: 
+* Due date
 #### Actors:
+* User
 #### Description:
-#### Cross Ref:
+1. The user clicks the Add task button
+1. Dialog box appears
+1. User enters the due date for the assignment
+#### Cross Ref: 
+* Requires a dialog box from the add task function to input the due date.
 #### Use-Cases:
+* Add Task must be initiated before Due date can be assigned. 
 
 ### Use Case: Priority Level
 #### Actors:

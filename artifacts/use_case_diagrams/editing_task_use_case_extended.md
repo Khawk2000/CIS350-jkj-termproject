@@ -2,7 +2,10 @@
 
 ### Use Case: Assignment name
 #### Actors: User
-#### Description: The user through the Add task button enters the name of their assignment for the task list.
+#### Description: 
+1. The user clicks the Add task button
+1. Dialog box appears
+1. User enters the name of the assignment
 #### Cross Ref: Requires dialog box for the add task function to be opened and a space for name to be assigned.
 #### Use-Cases: Add Task must be initiated before Assignment name can be assigned.
 

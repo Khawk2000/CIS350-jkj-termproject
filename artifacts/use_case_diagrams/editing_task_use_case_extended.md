@@ -1,7 +1,6 @@
 # Editing Task List Use Case Diagram Extended Syntax
 
-### Use Case: 
-* Assignment name
+### Use Case: Assignment name
 #### Actors: 
 * User
 #### Description: 
@@ -13,8 +12,7 @@
 #### Use-Cases: 
 * Add Task must be initiated before Assignment name can be assigned.
 
-### Use Case: 
-* Class name
+### Use Case: Class name
 #### Actors: 
 * User
 #### Description:
@@ -26,8 +24,7 @@
 #### Use-Cases: 
 * Add Task must be initiated before Class name can be assigned.
 
-### Use Case: 
-* Due date
+### Use Case: Due date
 #### Actors:
 * User
 #### Description:
@@ -39,8 +36,7 @@
 #### Use-Cases:
 * Add Task must be initiated before Due date can be assigned. 
 
-### Use Case: 
-* Priority Level
+### Use Case: Priority Level
 #### Actors:
 * 
 #### Description:
@@ -50,8 +46,7 @@
 #### Use-Cases:
 *
 
-### Use Case:
-* Remove task
+### Use Case: Remove task
 #### Actors:
 *
 #### Description:
@@ -61,8 +56,7 @@
 #### Use-Cases:
 *
 
-### Use Case: 
-* Add task
+### Use Case: Add task
 #### Actors:
 * 
 #### Description:
@@ -72,8 +66,7 @@
 #### Use-Cases:
 *
 
-### Use Case: 
-* Valid date
+### Use Case: Valid date
 #### Actors:
 *
 #### Description:

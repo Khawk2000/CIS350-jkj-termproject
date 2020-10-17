@@ -38,42 +38,49 @@
 
 ### Use Case: Priority Level
 #### Actors:
-* 
+* user
 #### Description:
-1.
+1. The user clicks the add task button
+1. Dialog box appears 
+1. User enters the priority level: high, medium, or low
 #### Cross Ref:
-*
+* Requires a dialog box from the add task function to input a priority level
 #### Use-Cases:
-*
+* Add task must be initiated before Priority Level can be assigned
 
 ### Use Case: Remove task
 #### Actors:
-*
+* user and task system
 #### Description:
-1.
+1. The user clicks the task
+1. dialog box appears 
+1. user clicks the remove task button
 #### Cross Ref:
-*
+* No cross reference 
 #### Use-Cases:
-*
+* No use cases must be initiated before this 
 
 ### Use Case: Add task
 #### Actors:
-* 
+* Task system 
 #### Description:
-1.
+1. user clicks add task button 
+1. dialog box appears
+1. user enters in valuable information to the task 
 #### Cross Ref:
-*
+*  Requires user to enter in Assignment name, class name, due date, enter priority level
 #### Use-Cases:
-*
+* No use cases must be intitiated before this
 
 ### Use Case: Valid date
 #### Actors:
-*
+* user
 #### Description:
-1.
+1. User clicks add taks button
+1. dialog box appears
+1. user enters date 
+1. system checks to see if date enetered is valid
 #### Cross Ref:
-*
+* Requires a dialog box from Add task function for due date to be validated 
 #### Use-Cases:
-*
-
-
+* Add task must be intiated before date can be validated

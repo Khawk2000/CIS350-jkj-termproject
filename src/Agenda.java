@@ -1,4 +1,4 @@
-package CIS350TermProject;
+package JKJ;
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -207,11 +207,16 @@ public class Agenda{
     }
     static class btnAdd_Action implements ActionListener{
         public void actionPerformed (ActionEvent e){
-
+            String taskName = JOptionPane.showInputDialog("Enter the name of this assignment", "Name");
+            String className = JOptionPane.showInputDialog("Enter the name of the class this assignment is for","CIS350");
+            String taskDate = JOptionPane.showInputDialog("Enter the date this assignment is due (MM/DD/YYYY)", realDay/currentMonth/currentYear);
+            String priority = JOptionPane.showInputDialog("Enter the priority of this assignment(1-10)", 1);
+            int priorNum = Integer.parseInt(priority);
         }
     }
     static class btnRmv_Action implements ActionListener{
         public void actionPerformed (ActionEvent e){
+            String taskName = JOptionPane.showInputDialog("What is the name of the assignment you would like to remove", "Name");
 
         }
     }

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class TaskList extends AbstractTableModel {
-    private ArrayList<Task> list;
+    protected ArrayList<Task> list;
     private int size;
 
 
@@ -55,9 +55,12 @@ public class TaskList extends AbstractTableModel {
 
     public void Update(){
         list = (ArrayList<Task>) list.stream().filter(n -> n.getAssignmentName() != null). collect(Collectors.toList());
+        fireTableDataChanged();
     }
 
-
+    public Task get(int i){
+        return list.get(i);
+    }
 
     public TaskList(){
         super();
@@ -87,10 +90,10 @@ public class TaskList extends AbstractTableModel {
         fireTableDataChanged();
     }
 
-    public void removeTask(Task h){
-        int index = list.indexOf(h);
-        list.remove(index);
+    public void removeTask(Task task){
+        list.remove(task);
         size--;
+        fireTableDataChanged();
     }
 
     public static void main(String[] arg){

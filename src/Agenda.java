@@ -1,7 +1,3 @@
-
-
-
-
 package CIS350TermProject;
 
 import javax.swing.*;
@@ -241,8 +237,15 @@ public class Agenda{
     }
     static class btnRmv_Action implements ActionListener{
         public void actionPerformed (ActionEvent e){
-            String taskName = JOptionPane.showInputDialog("What is the name of the assignment you would like to remove", "Name");
-
+            if(btnRmv == e.getSource()){
+                int index = taskTable.getSelectedRow();
+                if(index == -1){
+                    JOptionPane.showMessageDialog(null, "You must select a task to delete");
+                }else{
+                    Task t = list.get(index);
+                    list.removeTask(t);
+                }
+            }
         }
     }
 
@@ -256,6 +259,3 @@ public class Agenda{
         }
     }
 }
-
-
-

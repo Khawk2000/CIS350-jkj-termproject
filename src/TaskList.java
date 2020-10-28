@@ -1,13 +1,66 @@
-package Hoevejo;
+package CIS350TermProject;
 
+
+
+import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
-
-public class TaskList {
+public class TaskList extends AbstractTableModel {
     private ArrayList<Task> list;
     private int size;
 
+
+    protected String[] columnTaskList = {"Assignment Name", "Class Name", "Due Date", "Priority" };
+
+    @Override
+    public String getColumnName(int col){
+        return columnTaskList[col];
+    }
+
+    @Override
+    public int getRowCount(){
+        return list.size();
+    }
+
+    @Override
+    public int getColumnCount() {
+        return columnTaskList.length;
+    }
+
+    @Override
+    public Object getValueAt(int row, int col){
+        return taskScreen(row, col);
+    }
+
+    public Object taskScreen(int row, int col){
+        switch (col) {
+            case 0:
+                return (list.get(row).getAssignmentName());
+
+            case 1:
+                return (list.get(row).getClassName());
+
+            case 2:
+                return (list.get(row).getDueDate());
+
+            case 3:
+                return (list.get(row).getPriority());
+
+            default:
+                throw new RuntimeException("JTable row, col is out of range" + row + " " + col);
+        }
+
+    }
+
+    public void Update(){
+        list = (ArrayList<Task>) list.stream().filter(n -> n.getAssignmentName() != null). collect(Collectors.toList());
+    }
+
+
+
     public TaskList(){
+        super();
         this.list  = new ArrayList<Task>();
         this.size = 0;
     }
@@ -31,11 +84,11 @@ public class TaskList {
     public void addTask(Task task){
         list.add(task);
         size++;
+        fireTableDataChanged();
     }
 
-    public void removeTask(Task h){ 
+    public void removeTask(Task h){
         int index = list.indexOf(h);
-
         list.remove(index);
         size--;
     }
@@ -43,11 +96,10 @@ public class TaskList {
     public static void main(String[] arg){
         TaskList list = new TaskList();
 
-        Task x = new Task("HW5", "Cis263", 1, "20201510");
-        Task y = new Task("HW3", "Cis350", 5, "20201510");
-        Task z = new Task("Test", "Cis241", 10, "20201510");
-        Task a = new Task("Quiz", "Mth325", 6, "20201510");
-
+        Task x = new Task("HW5", "Cis263", "20201510", 1);
+        Task y = new Task("HW3", "Cis350", "20201510", 5);
+        Task z = new Task("Test", "Cis241", "20201510", 10);
+        Task a = new Task("Quiz", "Mth325", "20201510", 6);
         list.addTask(x);
         list.addTask(y);
         list.addTask(z);

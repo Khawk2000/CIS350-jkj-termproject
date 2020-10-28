@@ -1,4 +1,6 @@
-package Hoevejo;
+package CIS350TermProject;
+
+import javax.swing.*;
 import java.util.*;
 
 public class Task {
@@ -15,7 +17,7 @@ public class Task {
 
     }
 
-    public Task(String name, String clss, int num, String date){
+    public Task(String name, String clss, String date, int num){
         assignmentName = name;
         className = clss;
         priority = num;
@@ -59,3 +61,4 @@ public class Task {
         return ("Assignment: " + assignmentName + " Class name: " + className + " Due date: " + dueDate);
     }
 }
+

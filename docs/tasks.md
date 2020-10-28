@@ -10,7 +10,10 @@
 * Expected Time to Complete: completed
 * Responsible person(s): Jon Hoeve
 
-
+### Task 3
+* Description: Create a working calendar GUI
+* Expected Time to Complete: completed
+* Responsible person(s): Keegan Hawkins
 
 
 ## Incompleted Tasks
@@ -28,6 +31,14 @@
 * Description: Sorting by priority level
 * Expected Time to Complete: week
 * Responsible person(s): Jon Hoeve
+
+### Task 4
+* Description: Implementing add and remove tasks into GUI
+* Expected Time to Complete: Couple days
+* Responsible Person(s): Keegan Hawkins
+
+### Task 5
+* Description: 
 
 
 

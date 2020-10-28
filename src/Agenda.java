@@ -1,23 +1,30 @@
-package JKJ;
+
+
+
+
+package CIS350TermProject;
 
 import javax.swing.*;
-import javax.swing.event.*;
 import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
 public class Agenda{
-    static JLabel lblMonth, lblYear;
-    static JButton btnPrev, btnNext, btnAdd, btnRmv;
-    static JTable tblCalendar;
-    static JComboBox cmbYear;
-    static JFrame frmMain;
-    static Container pane;
-    static DefaultTableModel mtblCalendar; //Table model
-    static JScrollPane stblCalendar; //The scrollpane
-    static JPanel pnlCalendar;
-    static int realYear, realMonth, realDay, currentYear, currentMonth;
+    private static JLabel lblMonth, lblYear;
+    private static JButton btnPrev, btnNext, btnAdd, btnRmv;
+    private static JTable tblCalendar;
+    private static JComboBox cmbYear;
+    private static JFrame frmMain;
+    private static Container pane;
+    private static DefaultTableModel mtblCalendar; //Table model
+    private static JScrollPane stblCalendar; //The scrollpane
+    private static JPanel pnlCalendar;
+    private static int realYear, realMonth, realDay, currentYear, currentMonth;
+    private static TaskList list;
+    private static JTable taskTable;
+    private static JScrollPane taskScroll;
+    private static JPanel pnlTaskList;
 
     public static void main (String args[]){
         //Look and feel
@@ -29,7 +36,7 @@ public class Agenda{
 
         //Prepare frame
         frmMain = new JFrame ("HomeworkHelp Agenda"); //Create frame
-        frmMain.setSize(800, 600); //Set size to 400x400 pixels
+        frmMain.setSize(1200, 900); //Set size to 400x400 pixels
         pane = frmMain.getContentPane(); //Get content pane
         pane.setLayout(null); //Apply null layout
         frmMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Close when X is clicked
@@ -46,9 +53,19 @@ public class Agenda{
         tblCalendar = new JTable(mtblCalendar);
         stblCalendar = new JScrollPane(tblCalendar);
         pnlCalendar = new JPanel(null);
+        list = new TaskList();
+        taskTable = new JTable(list);
+        taskScroll = new JScrollPane(taskTable);
+        taskScroll.setPreferredSize(new Dimension(800, 300));
+        pnlTaskList = new JPanel();
+
 
         //Set border
         pnlCalendar.setBorder(BorderFactory.createTitledBorder("Calendar"));
+        pnlTaskList.setBorder(BorderFactory.createTitledBorder("Task List"));
+        pnlTaskList.setLayout(new GridLayout(4, 2));
+
+
 
         //Register action listeners
         btnPrev.addActionListener(new btnPrev_Action());
@@ -59,24 +76,27 @@ public class Agenda{
 
         //Add controls to pane
         pane.add(pnlCalendar);
+        pane.add(pnlTaskList);
         pnlCalendar.add(lblMonth);
         pnlCalendar.add(lblYear);
         pnlCalendar.add(cmbYear);
         pnlCalendar.add(btnPrev);
         pnlCalendar.add(btnNext);
+        pnlCalendar.add(stblCalendar);
+        pnlTaskList.add(taskScroll);
         pnlCalendar.add(btnAdd);
         pnlCalendar.add(btnRmv);
-        pnlCalendar.add(stblCalendar);
 
         //Set bounds
         pnlCalendar.setBounds(0, 0, 600, 335);
+        pnlTaskList.setBounds(20, 355, 800, 300);
         lblMonth.setBounds(160-lblMonth.getPreferredSize().width/2, 25, 100, 25);
         lblYear.setBounds(10, 305, 80, 20);
         cmbYear.setBounds(230, 305, 80, 20);
         btnPrev.setBounds(10, 25, 50, 25);
         btnNext.setBounds(260, 25, 50, 25);
-        btnAdd.setBounds(400, 100, 100, 50);
-        btnRmv.setBounds(400, 180, 100, 50);
+        btnAdd.setBounds(350, 100, 100, 50);
+        btnRmv.setBounds(350, 180, 100, 50);
         stblCalendar.setBounds(10, 50, 300, 250);
 
         //Make frame visible
@@ -97,21 +117,22 @@ public class Agenda{
             mtblCalendar.addColumn(headers[i]);
         }
 
+
+
         tblCalendar.getParent().setBackground(tblCalendar.getBackground()); //Set background
 
-        //No resize/reorder
-        //tblCalendar.getTableHeader().setResizingAllowed(true);
-        //tblCalendar.getTableHeader().setReorderingAllowed(true);
 
         //Single cell selection
         tblCalendar.setColumnSelectionAllowed(true);
         tblCalendar.setRowSelectionAllowed(true);
         tblCalendar.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
+
         //Set row/column count
         tblCalendar.setRowHeight(38);
         mtblCalendar.setColumnCount(7);
         mtblCalendar.setRowCount(6);
+
 
         //Populate table
         for (int i=realYear-100; i<=realYear+100; i++){
@@ -161,6 +182,8 @@ public class Agenda{
         tblCalendar.setDefaultRenderer(tblCalendar.getColumnClass(0), new tblCalendarRenderer());
     }
 
+
+
     static class tblCalendarRenderer extends DefaultTableCellRenderer{
         public Component getTableCellRendererComponent (JTable table, Object value, boolean selected, boolean focused, int row, int column){
             super.getTableCellRendererComponent(table, value, selected, focused, row, column);
@@ -207,11 +230,13 @@ public class Agenda{
     }
     static class btnAdd_Action implements ActionListener{
         public void actionPerformed (ActionEvent e){
-            String taskName = JOptionPane.showInputDialog("Enter the name of this assignment", "Name");
+            String assignName = JOptionPane.showInputDialog("Enter the name of this assignment", "Name");
             String className = JOptionPane.showInputDialog("Enter the name of the class this assignment is for","CIS350");
-            String taskDate = JOptionPane.showInputDialog("Enter the date this assignment is due (MM/DD/YYYY)", realDay/currentMonth/currentYear);
-            String priority = JOptionPane.showInputDialog("Enter the priority of this assignment(1-10)", 1);
-            int priorNum = Integer.parseInt(priority);
+            String dueDate = JOptionPane.showInputDialog("Enter the date this assignment is due (MM/DD/YYYY)", "01/01/2020");
+            String priorNUM = JOptionPane.showInputDialog("Enter the priority of this assignment(1-10)", 1);
+            int priority = Integer.parseInt(priorNUM);
+            list.addTask(new Task(assignName, className, dueDate, priority));
+            list.Update();
         }
     }
     static class btnRmv_Action implements ActionListener{
@@ -231,3 +256,6 @@ public class Agenda{
         }
     }
 }
+
+
+

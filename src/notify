@@ -1,0 +1,52 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.net.URL;
+import javax.swing.*;
+import java.util.*;
+import java.text.*;
+import java.time.LocalDate;
+ 
+public class Notify extends Task { // needed a main method to draw from so i made johns code work with mine
+    
+    public GregorianCalendar cal ;
+    public Date NotifyDate;
+    public Date DueDate;
+    
+    static DateFormat dateFormat = new SimpleDateFormat("mm/dd/yyyy");
+    
+    public Notify(Date DueDate, Date NotifyDate){ // initializes
+        int n = -1; // for subtracting one day from duedate to notify user
+        DueDate = DueDate;
+        NotifyDate = subtractOne(DueDate, n);
+    }
+    
+    public Date subtractOne(Date DueDate, int n){ // gets notify by date by subtracting n (1) for now
+	Date notifyDate = new Date();
+        cal.setTime(DueDate);
+	cal.add(Calendar.DATE, -n);
+				
+	notifyDate = cal.getTime();
+        return notifyDate;
+    }
+    
+    public long subtractDate(Date DueDate, Date n){ // finds the time inbetween the two days 
+        long difference = 0;
+	Date notifyDate = new Date();
+        cal.setTime(DueDate);
+	difference = DueDate.getTime() - n.getTime();
+	difference = difference / 1000/ 60/ 60/ 24; // diff in days
+	
+        return difference;
+    }
+    
+    public void timeToNotify(Date NotifyDate, Date DueDate, Task T){
+        int notify = 0;
+        do // may have a possible infinite runtime error here but not sure
+        notify = (int)subtractDate(DueDate, NotifyDate);
+        while(DueDate != NotifyDate || 
+        (notify == 1)); // until they either equal each other or one day before you
+        //will not get notifications, can be changed later.
+        JOptionPane.showMessageDialog(null, "Your homework is due soon!"); // code continues to run until the dates are 
+    }
+    
+}

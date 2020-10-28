@@ -38,7 +38,9 @@
 * Responsible Person(s): Keegan Hawkins
 
 ### Task 5
-* Description: 
+* Description: Make visible Task list 
+* Expected Time to Complete: Week
+* Responsible Person(s): Keegan Hawkins
 
 
 

@@ -42,6 +42,11 @@
 * Expected Time to Complete: Week
 * Responsible Person(s): Keegan Hawkins
 
+### Task 6
+* Description: Check if date is valid 
+* Expected Time to Complete: 2 days
+* Responsible Person(s): Jon Hoeve
+
 
 
 

@@ -15,6 +15,16 @@
 * Expected Time to Complete: completed
 * Responsible person(s): Keegan Hawkins
 
+### Task 4 
+* Description: Create a basic app Layout in Android Studio
+* Expected Time to Complete: completed
+* Responsible person(s): Jacob Stone
+
+### Task 5 
+* Description: Create a notification system in Android Studio
+* Expected Time to Complete: completed
+* Responsible Person(s): Jacob Stone
+
 
 ## Incompleted Tasks
 ### Task 1
@@ -42,12 +52,15 @@
 * Expected Time to Complete: Week
 * Responsible Person(s): Keegan Hawkins
 
-### Task 6
-* Description: Check if date is valid 
-* Expected Time to Complete: 2 days
-* Responsible Person(s): Jon Hoeve
+### Task 6 
+* Description: Merge code from Java to Android studio Environment 
+* Expected time to Complete: Week 
+* Responsible Person(s): Jacob Stone
 
-
+### Task 7
+* Description: implement Layoiut to work across other Android devices
+* Expected Time to Complete: Two Weeks
+* Responsible Person(s): Jacob Stone
 
 
 

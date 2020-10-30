@@ -62,6 +62,16 @@
 * Expected Time to Complete: Two Weeks
 * Responsible Person(s): Jacob Stone
 
+### Task 8
+* Description: Check if date is valid 
+* Expected Time to Complete: 2 days
+* Responsible Person(s): Jon Hoeve
+
+### Task 9 
+* Description: Create unique sound for notification
+* Expected Time to Complete: Two Days
+* Responsible Person(s): Jacob Stone
+
 
 
 

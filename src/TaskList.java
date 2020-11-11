@@ -4,11 +4,16 @@ package CIS350TermProject;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class TaskList extends AbstractTableModel {
     protected ArrayList<Task> list;
     private int size;
+    protected static final int CLASSNAME = 1;
+    protected static final int DUEDATE = 2;
+    protected static final int PRIORITY = 3;
+    protected int sorting = Agenda.sorting;
 
 
     protected String[] columnTaskList = {"Assignment Name", "Class Name", "Due Date", "Priority" };
@@ -54,9 +59,29 @@ public class TaskList extends AbstractTableModel {
     }
 
     public void Update(){
-        list = (ArrayList<Task>) list.stream().filter(n -> n.getAssignmentName() != null). collect(Collectors.toList());
+        switch (sorting){
+            case CLASSNAME:
+                list = (ArrayList<Task>) list.stream().filter(n -> n.getAssignmentName() != null). collect(Collectors.toList());
+                Collections.sort(list, ((a1, a2) -> a1.getClassName().compareTo(a2.getClassName())));
+                break;
+            case DUEDATE:
+                list = (ArrayList<Task>) list.stream().filter(n -> n.getAssignmentName() != null). collect(Collectors.toList());
+                Collections.sort(list, ((a1, a2) -> a1.getDueDate().compareTo(a2.getDueDate())));
+                break;
+            case PRIORITY:
+                list = (ArrayList<Task>) list.stream().filter(n -> n.getAssignmentName() != null). collect(Collectors.toList());
+                Collections.sort(list, ((a1, a2) -> Integer.compare(a1.getPriority(), a2.getPriority())));
+                break;
+        }
         fireTableDataChanged();
+
     }
+
+    public void setSorting(int selected){
+        sorting = selected;
+        Update();
+    }
+
 
     public Task get(int i){
         return list.get(i);

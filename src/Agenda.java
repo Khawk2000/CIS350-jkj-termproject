@@ -10,7 +10,7 @@ public class Agenda{
     private static JLabel lblMonth, lblYear;
     private static JButton btnPrev, btnNext, btnAdd, btnRmv;
     private static JTable tblCalendar;
-    private static JComboBox cmbYear;
+    private static JComboBox cmbYear, cmbSort;
     private static JFrame frmMain;
     private static Container pane;
     private static DefaultTableModel mtblCalendar; //Table model
@@ -21,6 +21,8 @@ public class Agenda{
     private static JTable taskTable;
     private static JScrollPane taskScroll;
     private static JPanel pnlTaskList;
+
+    protected static int sorting = 0;
 
     public static void main (String args[]){
         //Look and feel
@@ -41,6 +43,7 @@ public class Agenda{
         lblMonth = new JLabel ("January");
         lblYear = new JLabel ("Change year:");
         cmbYear = new JComboBox();
+        cmbSort = new JComboBox();
         btnPrev = new JButton ("<-");
         btnNext = new JButton ("->");
         btnAdd = new JButton ("Add Task");
@@ -52,7 +55,7 @@ public class Agenda{
         list = new TaskList();
         taskTable = new JTable(list);
         taskScroll = new JScrollPane(taskTable);
-        taskScroll.setPreferredSize(new Dimension(800, 300));
+        taskScroll.setSize(new Dimension(800, 300));
         pnlTaskList = new JPanel();
 
 
@@ -63,12 +66,14 @@ public class Agenda{
 
 
 
+
         //Register action listeners
         btnPrev.addActionListener(new btnPrev_Action());
         btnNext.addActionListener(new btnNext_Action());
         btnAdd.addActionListener(new btnAdd_Action());
         btnRmv.addActionListener(new btnRmv_Action());
         cmbYear.addActionListener(new cmbYear_Action());
+        cmbSort.addActionListener(new cmbSort_Action());
 
         //Add controls to pane
         pane.add(pnlCalendar);
@@ -76,6 +81,7 @@ public class Agenda{
         pnlCalendar.add(lblMonth);
         pnlCalendar.add(lblYear);
         pnlCalendar.add(cmbYear);
+        pnlCalendar.add(cmbSort);
         pnlCalendar.add(btnPrev);
         pnlCalendar.add(btnNext);
         pnlCalendar.add(stblCalendar);
@@ -84,11 +90,12 @@ public class Agenda{
         pnlCalendar.add(btnRmv);
 
         //Set bounds
-        pnlCalendar.setBounds(0, 0, 600, 335);
-        pnlTaskList.setBounds(20, 355, 800, 300);
+        pnlCalendar.setBounds(300, 0, 600, 335);
+        pnlTaskList.setBounds(200, 335, 800, 800);
         lblMonth.setBounds(160-lblMonth.getPreferredSize().width/2, 25, 100, 25);
         lblYear.setBounds(10, 305, 80, 20);
         cmbYear.setBounds(230, 305, 80, 20);
+        cmbSort.setBounds(360, 250, 80, 20);
         btnPrev.setBounds(10, 25, 50, 25);
         btnNext.setBounds(260, 25, 50, 25);
         btnAdd.setBounds(350, 100, 100, 50);
@@ -135,6 +142,11 @@ public class Agenda{
             cmbYear.addItem(String.valueOf(i));
         }
 
+        cmbSort.addItem("Class Name");
+        cmbSort.addItem("Due Date");
+        cmbSort.addItem("Priority");
+
+
         //Refresh calendar
         refreshCalendar (realMonth, realYear); //Refresh calendar
     }
@@ -154,6 +166,7 @@ public class Agenda{
         lblMonth.setText(months[month]); //Refresh the month label (at the top)
         lblMonth.setBounds(160-lblMonth.getPreferredSize().width/2, 25, 180, 25); //Re-align label with calendar
         cmbYear.setSelectedItem(String.valueOf(year)); //Select the correct year in the combo box
+        cmbSort.setSelectedItem("Sort");
 
         //Clear table
         for (int i=0; i<6; i++){
@@ -258,4 +271,19 @@ public class Agenda{
             }
         }
     }
+
+    static class cmbSort_Action implements ActionListener{
+        public void actionPerformed (ActionEvent e){
+            if (cmbSort.getSelectedItem() == "Class Name"){
+                list.setSorting(1);
+            }
+            if (cmbSort.getSelectedItem() == "Due Date"){
+                list.setSorting(2);
+            }
+            if (cmbSort.getSelectedItem() == "Priority") {
+                list.setSorting(3);
+            }
+        }
+    }
+
 }

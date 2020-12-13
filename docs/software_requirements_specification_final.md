@@ -21,21 +21,21 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR1 | A task that is checked off by the user shall be removed from the agenda. | TC1 |
-| FR2 | A task that is added by the user shall correspond to the date that was inputed on the agenda. | TC2 |
-| FR3 | The agenda shall display correct tasks based on the date. | TC1,TC2 |
-| FR4 | A class that is added by the user shall appear in list of classes. | TC1 |
-| FR5 | Descriptions that a user adds with a class shall correspond correctly with the right classes. | TC2 |
+| FR6 | A task that is checked off by the user shall be removed from the agenda. | TC1 |
+| FR7 | A task that is added by the user shall correspond to the date that was inputed on the agenda. | TC2 |
+| FR8 | The agenda shall display correct tasks based on the date. | TC1,TC2 |
+| FR9 | A class that is added by the user shall appear in list of classes. | TC1 |
+| FR10 | Descriptions that a user adds with a class shall correspond correctly with the right classes. | TC2 |
 
 ### Tasks
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR1 | The app shall be able to take a user inputted name of assignment. | TC1 |
-| FR2 | The app shall take a user inputted due date of assignment. | TC2 |
-| FR3 | The user shall be able to add an importance level to each assignment. | TC1,TC2 |
-| FR4 | The tasks shall be sorted correctly based on importance level.  | TC1 |
-| FR5 | The app shall remove a task from the list when user deletes it. | TC2 |
+| FR11 | The app shall be able to take a user inputted name of assignment. | TC1 |
+| FR12 | The app shall take a user inputted due date of assignment. | TC2 |
+| FR13 | The user shall be able to add an importance level to each assignment. | TC1,TC2 |
+| FR14 | The tasks shall be sorted correctly based on importance level.  | TC1 |
+| FR15 | The app shall remove a task from the list when user deletes it. | TC2 |
 
 ## Non-Functional Requirements
 
@@ -53,21 +53,21 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR1 | The agenda shall allow the input of multiple events on a date without slowing down the app. | TC4 |
-| NFR2 | The agenda shall be able to process back to back removes or adds of tasks at a reliable speed. | TBD |
-| NFR3 | Text boxes asking for task information shall pop up in a timely manner from the agenda. | TC6 |
-| NFR4 | A date on the agenda shall be highlighted to signify the current date. | TC4 |
-| NFR5 | The agenda shall display a monthly calendar | TC5 |
+| NFR6 | The agenda shall allow the input of multiple events on a date without slowing down the app. | TC4 |
+| NFR7 | The agenda shall be able to process back to back removes or adds of tasks at a reliable speed. | TBD |
+| NFR8 | Text boxes asking for task information shall pop up in a timely manner from the agenda. | TC6 |
+| NFR9 | A date on the agenda shall be highlighted to signify the current date. | TC4 |
+| NFR10 | The agenda shall display a monthly calendar | TC5 |
 
 ### Tasks
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR1 | The interface for creating tasks shall be user friendly and easy to use. | TC4 |
-| NFR2 | Tasks shall be created in a timely manner upon inputs. | TBD |
-| NFR3 | Tasks shall be easy to find once created. | TC6 |
-| NFR4 | Tasks shall be removed in a timely manner when user deletes it. | TC4 |
-| NFR5 | Tasks shall be highlighted based on importance level. | TC5 |
+| NFR11 | The interface for creating tasks shall be user friendly and easy to use. | TC4 |
+| NFR12 | Tasks shall be created in a timely manner upon inputs. | TBD |
+| NFR13 | Tasks shall be easy to find once created. | TC6 |
+| NFR14 | Tasks shall be removed in a timely manner when user deletes it. | TC4 |
+| NFR15 | Tasks shall be highlighted based on importance level. | TC5 |
 i
 # Test Specification
 * Description of what this section is

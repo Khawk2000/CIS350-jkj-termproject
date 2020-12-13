@@ -24,15 +24,15 @@ The purpose of this document is to outline our baseline requirements for this pr
 | FR6 | A task that is checked off by the user shall be removed from the agenda. | TC1 |
 | FR7 | A task that is added by the user shall correspond to the date that was inputed on the agenda. | TC2 |
 | FR8 | The agenda shall display correct tasks based on the date. | TC1,TC2 |
-| FR9 | A class that is added by the user shall appear in list of classes. | TC1 |
-| FR10 | Descriptions that a user adds with a class shall correspond correctly with the right classes. | TC2 |
+| FR9 | A class that is added by the user shall appear in list of classes. | TC6 |
+| FR10 | Descriptions that a user adds with a class shall correspond correctly with the right classes. | TC6 |
 
 ### Tasks
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
 | FR11 | The app shall be able to take a user inputted name of assignment. | TC1 |
-| FR12 | The app shall take a user inputted due date of assignment. | TC2 |
+| FR12 | The app shall take a user inputted due date of assignment. | TC4 |
 | FR13 | The user shall be able to add an importance level to each assignment. | TC3 |
 | FR14 | The tasks shall be sorted correctly based on importance level.  | TC1 |
 | FR15 | The app shall remove a task from the list when user deletes it. | TC2 |
@@ -76,11 +76,11 @@ i
 | ID  | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
 | TC1 | Tests to make sure the class name corresponds correctly to user input | 1. Create a task with all inputs needed including assignment name, class name, class description, due date, and priority level. 2. Test to see if the class name from the task is equal to what was inputted. | "CIS350" and task1.getClassName() | CIS350 | CIS350 | Passed | FR11 |
-| TC2 | Tests to make sure the assignment name corresponds correctly to user input| 1. Create a  task with all inputs needed for a task. 2. Test to see if the assignment name assigned to the task is the same as the assignment inputted. | "Homework5" and task1.getAssignmentName() | Homework5 | Homework5 | Passed ||
+| TC2 | Tests to make sure the assignment name corresponds correctly to user input| 1. Create a  task with all inputs needed for a task. 2. Test to see if the assignment name assigned to the task is the same as the assignment inputted. | "Homework5" and task1.getAssignmentName() | Homework5 | Homework5 | Passed | None |
 | TC3 | Tests to make sure the priority level corresponds correctly to the user input | 1. Create a task with all inputs needed for a task. 2. Test to see if the priority level assigned to the task is the same as the priority level inputted. | 6 and task1.getPriority() | 6 | 6 | Passed | FR13 |
-| TC4 | Tests to make sure the due date corresponds correctly to user input | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
+| TC4 | Tests to make sure the due date corresponds correctly to user input | 1. Create a task with all inputs needed for a task. 2. Test to see if the due date assigned to the task is the same as the due date inputted. | "12/25/2020" and task1.getDueDate() | 12/25/2020 | 12/25/2020 | Passed | FR12 |
 | TC5 | Tests to make sure the priority level color corresponds to the correct priority level | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC6 | Tests to see if a class is added correctly to their class list when the add class button is pressed| <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
+| TC6 | Tests to see if a class is added correctly to their class list when the add button is pressed. | 1. Create a class with name and description. 2. Add the class to list. 3. Check if class is correctly added to the list | "CIS350", "Software Engineering", list.get(0).getClassName(), and list.get(0).getClassDescription | "CIS350" and "Software Engineering" | "CIS350" and "Software Engineering" | Passed | FR9, FR10 |
 | TC7 | Tests to see if a class is removed correctly from the class list when the remove class button is pressed | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
 | TC8 | Tests to see if a task is added correctly to their task list when add button is pressed | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
 | TC9 | Tests to see if a task is removed correctly from their task list when remove button is pressed | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |

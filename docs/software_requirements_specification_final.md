@@ -102,10 +102,10 @@ i
 
 | ID  | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| TC16 | Testing to see if phone is turned will layout display correctly | 1. open app. 2. Turn phone 90 degrees | none | Values show correclty | Values showed correctly | Passeed | None |
-| TC17 | Testing if adding a class will show picture, Name, Description and new View and Delete buttons | 1. Click Add Class button 2. Input Data needed | "CIS 343", "Structures of Programming Languages", View button, Delete button | Blackboard Image, "CIS 343", "Structures of Programming Languages", View button, Delete button | Blackboard Image, "CIS 343", "Structures of Programming Languages", View button, Delete button | Passed | FR9, FR10 |
-| TC18 | Testing if clicking the view button shows correct task list | 1. Open app. 2. Click on classes view button | none | List of Classes Specific Tasks | List of Classes Specific Tasks | Passed | NFR11 |
-| TC19 | Testing to see if Adding Task shows dialog boxes and input lines correctly | 1. Open app. 2. Click View button for a class. 3. Click Add Task Button | none | dialog boxes appears in order Name, Priority, Due Date, Notifcation Choice | dialog boxes appeared in correct order | Passed | FR11, FR12, FR13, NFR11, NFR12, NFR13 |
+| TC16 | Testing to see if phone is turned will layout display correctly | 1. Open app. 2. Turn phone 90 degrees | none | Values show correclty | Values showed correctly | Passed | None |
+| TC17 | Testing if adding a class will show picture, name, description and new view and delete buttons | 1. Click add class button 2. Input data needed | "CIS 343", "Structures of Programming Languages", "View" button, "Delete" button | Blackboard image, "CIS 343", "Structures of Programming Languages", "View" button, "Delete" button | Blackboard Image, "CIS 343", "Structures of Programming Languages", "View" button, "Delete" button | Passed | FR9, FR10 |
+| TC18 | Testing if clicking the view button shows correct task list | 1. Open app. 2. Click on classes view button | none | List of classes specific tasks | List of classes specific tasks | Passed | NFR11 |
+| TC19 | Testing to see if adding task shows dialog boxes and input lines correctly | 1. Open app. 2. Click view button for a class. 3. Click add task button | none | dialog boxes appears in order Name, Priority, Due Date, Notifcation choice | Dialog boxes appeared in correct order | Passed | FR11, FR12, FR13, NFR11, NFR12, NFR13 |
 | TC20 | Testing to see if deleting a class no longer shows said class | 1. Open app. 2. Click delete button for a class  | none | Class view is no longer seen | Class view is no longer seen | Passed | FR15 |
 
 

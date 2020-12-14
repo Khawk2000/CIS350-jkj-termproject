@@ -35,7 +35,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 | FR12 | The app shall take a user inputted due date of assignment. | TC4, TC8, TC19 |
 | FR13 | The user shall be able to add an importance level to each assignment. | TC3, TC8 , TC19|
 | FR14 | The tasks shall be sorted correctly based on importance level.  | TC1 |
-| FR15 | The app shall remove a task from the list when user deletes it. | TC2, TC9 |
+| FR15 | The app shall remove a task/class from the list when user deletes it. | TC2, TC9, TC20 |
 
 ## Non-Functional Requirements
 
@@ -106,7 +106,7 @@ i
 | TC17 | Testing if adding a class will show picture, Name, Description and new View and Delete buttons | 1. Click Add Class button 2. Input Data needed | "CIS 343", "Structures of Programming Languages", View button, Delete button | Blackboard Image, "CIS 343", "Structures of Programming Languages", View button, Delete button | Blackboard Image, "CIS 343", "Structures of Programming Languages", View button, Delete button | Passed | FR9, FR10 |
 | TC18 | Testing if clicking the view button shows correct task list | 1. Open app. 2. Click on classes view button | none | List of Classes Specific Tasks | List of Classes Specific Tasks | Passed | NFR11 |
 | TC19 | Testing to see if Adding Task shows dialog boxes and input lines correctly | 1. Open app. 2. Click View button for a class. 3. Click Add Task Button | none | dialog boxes appears in order Name, Priority, Due Date, Notifcation Choice | dialog boxes appeared in correct order | Passed | FR11, FR12, FR13, NFR11, NFR12, NFR13 |
-| TC20 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
+| TC20 | Testing to see if deleting a class no longer shows said class | 1. Open app. 2. Click delete button for a class  | none | Class view is no longer seen | Class view is no longer seen | Passed | FR15 |
 
 
 # Software Artifacts

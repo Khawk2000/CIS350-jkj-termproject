@@ -1,0 +1,3 @@
+[submodule "src/src/Homework_Reminder"]
+	path = src/src/Homework_Reminder
+	url = https://github.com/stoneyboi/Homework_Reminder

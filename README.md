@@ -11,7 +11,7 @@ Homework Reminder App (~1 paragraph description)
 ## Prerequisites
 Android Studio 
 ## Run Instructions
-1. Using Android  Studio and Github, pull the entire project into Android Studio. if you are having trouble finding it in our repo, [here](https://github.com/stoneyboi/Homework_Reminder) is another link that you can use. 
+1. Using Android  Studio and Github, pull the entire project code into Android Studio. If you are having trouble finding it in our repo, [here](https://github.com/stoneyboi/Homework_Reminder) is another link that you can use. This link contains only the source code to run the app and not necesarily the tests. 
 2. Use the AVD manager in android studio to start an emulator for the app (doesnt matter what type of phone, you just want API 30 and the software system R
 3. Click the Run icon on the top bar to run the app in the emulator 
 

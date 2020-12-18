@@ -2,7 +2,7 @@
 
 Homework Reminder App 
 
-Our Homerwork reminder app was developed to help students keep track of their assignments. With our app the user is able to create classes and create tasks.
+  Our Homerwork reminder app was developed to help students keep track of their assignments. With our app the user is able to create classes and create tasks.
 Tasks are added to the specific class where you can view them in the task list. You can delete tasks from the list if you finish it early. Classes are also able to be deleted.
 When creating a task the user will enter a name, due date and priority level. The tasks will be sorted based on priority level but can also be sorted by due date if the 
 user chooses. There is a notification system which will alert the user when a due date is approaching and on the day an assignment is due. There is a sound

@@ -15,7 +15,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 | FR2 | The notification system shall continue to notify the user until the task is complete/deadline passed. | TBD |
 | FR3 | The notification system shall use haptics to notify user. | TC22 |
 | FR4 | The notification system shall use sounds to alert user of notification. | TC22 |
-| FR5 | The notification system shall produce an on screen display. | TBD |
+| FR5 | The notification system shall produce an on screen display. | TC22 |
 
 ### Agenda
 
@@ -35,7 +35,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 | FR12 | The app shall take a user inputted due date of assignment. | TC4, TC8, TC20 |
 | FR13 | The user shall be able to add an importance level to each assignment. | TC3, TC8 , TC20|
 | FR14 | The tasks shall be sorted based on importance level.  | TC11 |
-| FR15 | The app shall remove a task/class from the list when user deletes it. | f TC9, TC21 |
+| FR15 | The app shall remove a task/class from the list when user deletes it. | TC9, TC21 |
 
 ## Non-Functional Requirements
 
@@ -44,18 +44,18 @@ The purpose of this document is to outline our baseline requirements for this pr
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
 | NFR1 | The notification system shall have a unique sound to notify the user. | TC22 |
-| NFR2 | The notification system shall have an on screen notification visible. | TBD |
-| NFR3 | The notification system shall be turned off once user exits. | TC6 |
-| NFR4 | The notification system shall take up most of the screen for the notification. | TC4 |
-| NFR5 | The notification system shall have a drop down notification visible. | TC5 |
+| NFR2 | The notification system shall have an on screen notification visible. | TC22 |
+| NFR3 | The notification system shall be turned off once user exits. | TC22 |
+| NFR4 | The notification system shall take up most of the screen for the notification. | TC22 |
+| NFR5 | The notification system shall have a drop down notification visible. | TC22 |
 
 ### Agenda
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR6 | The agenda shall allow the input of multiple events on a date without slowing down the app. | TC4 |
-| NFR7 | The agenda shall be able to process back to back removes or adds of tasks at a reliable speed. | TC8, TC9 |
-| NFR8 | Text boxes asking for task information shall pop up in a timely manner from the agenda. | TC6 |
+| NFR6 | The agenda shall allow the input of multiple events on a date without slowing down the app. | TC23 |
+| NFR7 | The agenda shall be able to process back to back removes or adds of tasks at a reliable speed. | TC23 |
+| NFR8 | Text boxes asking for task information shall pop up in a timely manner from the agenda. | TC23 |
 | NFR9 | A date on the agenda shall be highlighted to signify the current date. | TC4 |
 | NFR10 | The agenda shall display a monthly calendar | TC5 |
 
@@ -63,8 +63,8 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR11 | The interface for creating tasks shall be user friendly and easy to use. | TC4, TC19, TC20 |
-| NFR12 | Tasks shall be created in a timely manner upon inputs. | TC8, TC20 |
+| NFR11 | The interface for creating tasks shall be user friendly and easy to use. | TC4, TC19, TC20, TC23 |
+| NFR12 | Tasks shall be created in a timely manner upon inputs. | TC8, TC20, TC23 |
 | NFR13 | Tasks shall be easy to find once created. | TC6, TC19, TC20 |
 | NFR14 | Tasks shall be removed in a timely manner when user deletes it. | TC4, TC9|
 | NFR15 | Tasks shall be highlighted based on importance level. | TC5 |
@@ -108,8 +108,8 @@ The purpose of this document is to outline our baseline requirements for this pr
 | TC19 | Testing if clicking the view button shows correct task list | 1. Open app. 2. Click on classes view button | none | List of classes specific tasks | List of classes specific tasks | Passed | FR8, NFR11 |
 | TC20 | Testing to see if adding task shows dialog boxes and input lines correctly | 1. Open app. 2. Click view button for a class. 3. Click add task button | none | dialog boxes appears in order Name, Priority, Due Date, Notifcation choice | Dialog boxes appeared in correct order | Passed | FR11, FR12, FR13, NFR11, NFR12, NFR13 |
 | TC21 | Testing to see if deleting a class no longer shows said class | 1. Open app. 2. Click delete button for a class  | none | Class view is no longer seen | Class view is no longer seen | Passed | FR15 |
-| TC22 | Testing to see if notifying user will produce sound and vibrate | 1. Open app. 2. Click add button for a task list. 3. Click yes to being notified by system for task | "Test", "HIGH", "12/20/20" | sound is produced, vibration produced| FIX ME!!!!! | Passed | FR3, FR4, NFR1 |
-| TC23 | 
+| TC22 | Testing to see if notifying user will produce sound and vibrate | 1. Open app. 2. Click add button for a task list. 3. Click yes to being notified by system for task | "Test", "HIGH", "12/20/20" | sound is produced, vibration produced| FIX ME!!!!! | Passed | FR3, FR4, FR5, NFR1, NFR2, NFR3, NFR4, NFR5 |
+| TC23 | Testing to add multiple events without slowdown | 1. Open app. 2. Add Classes. Click on a made class' view button. 3. Add Tasks | Multiple Classes and Tasks Being Made | App running smoothly | App ran smoothly | Passed | NFR6, NFR7, NFR8, NFR11, NFR12 |
 
 
 # Software Artifacts

@@ -114,8 +114,13 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 # Software Artifacts
 
-< Describe the purpose of this section>
+These are all of our software artifacts that we created along with our progression of this project. Each of them having their own unique addition to our overall documentation. 
 
-* I am a link to some file.pdf
-
+* [Agenda use case diagram] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/use_case_diagrams/Agenda_use_case_diagram.jpg)
+* [Notification use case diagram] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/use_case_diagrams/Notification%20System%20Use%20case.jpg)
+* [Task List use case diagram] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/use_case_diagrams/Use%20case%20diagram%20editing%20task%20list.JPG)
+* [Task List use case diagram extended syntax] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/use_case_diagrams/editing_task_use_case_extended.md)
+* [Project timeline Gantt Chart] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/gantt%20Chart.pdf)
+* [Midterm Presentation] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/MidtermPresentation-JKJ.pdf)
+* [Final Presentation] (https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/Final%20Presentation.pdf)
 

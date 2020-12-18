@@ -11,8 +11,8 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR1 | The user shall be notified by the app using the notification system at preset times by the user. | TBD |
-| FR2 | The notification system shall continue to notify the user until the task is complete/deadline passed. | TBD |
+| FR1 | The user shall be notified by the app using the notification system at preset times | TC24 |
+| FR2 | The notification system shall continue to notify the user until the task is complete/deadline passed. | TC24 |
 | FR3 | The notification system shall use haptics to notify user. | TC22 |
 | FR4 | The notification system shall use sounds to alert user of notification. | TC22 |
 | FR5 | The notification system shall produce an on screen display. | TC22 |
@@ -63,7 +63,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Requirement     | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR11 | The interface for creating tasks shall be user friendly and easy to use. | TC4, TC19, TC20, TC23 |
+| NFR11 | The interface for creating tasks shall be user friendly and easy to use. | TC4, TC13, TC14, TC15, TC16, TC19, TC20, TC23 |
 | NFR12 | Tasks shall be created in a timely manner upon inputs. | TC8, TC20, TC23 |
 | NFR13 | Tasks shall be easy to find once created. | TC6, TC19, TC20 |
 | NFR14 | Tasks shall be removed in a timely manner when user deletes it. | TC4, TC9|
@@ -92,12 +92,11 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| TC12 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC13 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC14 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC15 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC16 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-
+| TC12 | Tests to see if context of app is correct | 1. instantiate a context | none | "com.example.myappy" | "com.example.myappy" | Passed | none |
+| TC13 | Tests to see if button displays correct message for Task List Row  | 1. instantiate button. 2. set button to layout id | none | "NAME:" | "NAME:" | Passed | NFR11 |
+| TC14 | Tests to see if button displays correct message for Deleting Class | 1. instantiate button. 2. set button to layout id | none | "Delete" | "Delete" | Passed | NFR11 |
+| TC15 | Tests to see if button displays correct message for Adding Class  | 1. instantiate button. 2. set button to layout id | none | "Add Class" | "Add Class" | Passed | NFR11 |
+| TC16 | Tests to see if button displays correct message for Adding Task  | 1. instantiate button. 2. set button to layout id | none | "Add Task" | "Add Task" | Passed | NFR11 |
 
 ## System tests
 
@@ -110,6 +109,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 | TC21 | Testing to see if deleting a class no longer shows said class | 1. Open app. 2. Click delete button for a class  | none | Class view is no longer seen | Class view is no longer seen | Passed | FR15 |
 | TC22 | Testing to see if notifying user will produce sound and vibrate | 1. Open app. 2. Click add button for a task list. 3. Click yes to being notified by system for task | "Test", "HIGH", "12/20/20" | sound is produced, vibration produced| FIX ME!!!!! | Passed | FR3, FR4, FR5, NFR1, NFR2, NFR3, NFR4, NFR5 |
 | TC23 | Testing to add multiple events without slowdown | 1. Open app. 2. Add Classes. Click on a made class' view button. 3. Add Tasks | Multiple Classes and Tasks Being Made | App running smoothly | App ran smoothly | Passed | NFR6, NFR7, NFR8, NFR11, NFR12 |
+| TC24 | Testing to see if notification system will display message at set time until user finishes task. | 1. Open app. 2. Add task. 3. Click yes to being notified. | Task entered | App should display notifcation everyday at noon until task is done with | App displayed correctly | Passed | FR1, FR2 |
 
 
 # Software Artifacts

@@ -84,7 +84,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 | TC7 | Tests to see if a class is removed correctly from the class list when the remove button is pressed | 1. Create a class 2. Add class to the list 3. Remove the class from the list. 4. Check if class is removed from the list | "CIS350", list.get(0).getClassName(), 0, list.getSize() | "CIS350" and 0 | "CIS350" and 0 | Passed | FR6 |
 | TC8 | Tests to see if a task is added correctly to their task list when add button is pressed | 1. Click Add Task button on screen. 2. Input chosen data. 3. Test to see if displayed correctly | ""HW 7", "HIGH", "12/25/20" | "HW 7", "HIGH", "12/25/20" | "HW 7", "HIGH", "12/25/20" | Passed | FR11, FR12, FR13, NFR12, FR13|
 | TC9 | Tests to see if a task is removed correctly from their task list when remove button is pressed | 1. Click View button to view task list for a specific class. 2. Click Delete Button to test if task is deleted from view | Task test = new Task(); test = list.get(0); list.removeTask(0); assert(!test, list.get(0));| no view of task | no view of task | Passed | FR15 |
-| TC10 | Tests to see if class description corresponds correctly with the user input | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | FR10 |
+| TC10 | Tests to see if class description corresponds correctly with the user input | 1. Create a class with all inputs needed 2. Test to see if class description is correct | "Software Engineering" and task1.getClassDescription() | Software Engineering | Software Engineering| Passed | FR10 |
 | TC11 | Tests to see if tasks are sorted by priority level | 1. Click View Button on Class. 2. Click Add Task Button. 3. Add Data. 4. Test output. | "MEDIUM"; setSorting(PRIORITY); Update(); notifyDataSetChanged(); | list.get(2).getPriority().equals("MEDIUM"); | list.get(2).getPriority().equals("MEDIUM"); | Passed | FR14 |
 
 
@@ -92,7 +92,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| TC12 | Tests to see if context of app is correct | 1. instantiate a context | none | "com.example.myappy" | "com.example.myappy" | Passed | none |
+| TC12 | Tests to see if context of app is correct | 1. instantiate a context | none | "com.example.myappy" | "com.example.myappy" | Passed | TBD |
 | TC13 | Tests to see if button displays correct message for Task List Row  | 1. instantiate button. 2. set button to layout id | none | "NAME:" | "NAME:" | Passed | NFR11 |
 | TC14 | Tests to see if button displays correct message for Deleting Class | 1. instantiate button. 2. set button to layout id | none | "Delete" | "Delete" | Passed | NFR11 |
 | TC15 | Tests to see if button displays correct message for Adding Class  | 1. instantiate button. 2. set button to layout id | none | "Add Class" | "Add Class" | Passed | NFR11 |
@@ -102,7 +102,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 | ID  | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| TC17 | Testing to see if phone is turned will layout display correctly | 1. Open app. 2. Turn phone 90 degrees | none | Values show correclty | Values showed correctly | Passed | None |
+| TC17 | Testing to see if phone is turned will layout display correctly | 1. Open app. 2. Turn phone 90 degrees | none | Values show correclty | Values showed correctly | Passed | TBD |
 | TC18 | Testing if adding a class will show picture, name, description and new view and delete buttons | 1. Click add class button 2. Input data needed | "CIS 343", "Structures of Programming Languages", "View" button, "Delete" button | Blackboard image, "CIS 343", "Structures of Programming Languages", "View" button, "Delete" button | Blackboard Image, "CIS 343", "Structures of Programming Languages", "View" button, "Delete" button | Passed | FR9, FR10 |
 | TC19 | Testing if clicking the view button shows correct task list | 1. Open app. 2. Click on classes view button | none | List of classes specific tasks | List of classes specific tasks | Passed | FR8, NFR11 |
 | TC20 | Testing to see if adding task shows dialog boxes and input lines correctly | 1. Open app. 2. Click view button for a class. 3. Click add task button | none | dialog boxes appears in order Name, Priority, Due Date, Notifcation choice | Dialog boxes appeared in correct order | Passed | FR11, FR12, FR13, NFR11, NFR12, NFR13 |

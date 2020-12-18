@@ -9,5 +9,10 @@ Homework Reminder App (~1 paragraph description)
 * [Jacob Stone](https://github.com/stoneyboi/CIS350-HW2-Stone.git) (Role 5, Role 6)
 
 ## Prerequisites
-
+Android Studio 
 ## Run Instructions
+1. Using Android  Studio and Github, pull the entire project into Android Studio. if you are having trouble finding it in our repo, [here](https://github.com/stoneyboi/Homework_Reminder) is another link that you can use. 
+2. Use the AVD manager in android studio to start an emulator for the app (doesnt matter what type of phone, you just want API 30 and the software system R
+3. Click the Run icon on the top bar to run the app in the emulator 
+
+(NOTE: The first few minutes in the emulator are slightly buggy and slow since most processes are still being installed on the virtual device. )

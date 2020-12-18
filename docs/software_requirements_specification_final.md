@@ -1,9 +1,9 @@
 # Overview
-The purpose of this document is to outline our baseline requirements for this project. The requirements are sorted by features of the app design to better handle the working aspect of our project and to designate tasks to specific group members easier. In this document, we have oultined functional and non functional requirements for our entire project and will  be adding and modifying this document later on as the project progresses
+* **The purpose of this document is to outline our baseline requirements for this project. The requirements are sorted by features of the app design to better handle the working aspect of our project and to designate tasks to specific group members easier. In this document, we have oultined functional and non functional requirements for our entire project and will  be adding and modifying this document later on as the project progresses. **
 
 # Software Requirements
 
-* Describe the structure of this section
+* **Our software requirements that we used to build this project are listed below. Each section of functional and non-functional requirements has 3 different areas where we had specifications. Each of them have a full description as well as test cases that correspond with each requirement.**
 
 ## Functional Requirements
 
@@ -70,7 +70,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 | NFR15 | Tasks shall be highlighted based on importance level. | TC5 |
 
 # Test Specification
-* Description of what this section is
+* **Running all valid test cases that coincide with our functional and non-functional requirements. This includes unit testing, integration testing and system testing to show that the project works and operates the way it was intended.** 
 
 ## Unit test
 | ID  | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
@@ -114,7 +114,7 @@ The purpose of this document is to outline our baseline requirements for this pr
 
 # Software Artifacts
 
-These are all of our software artifacts that we created along with our progression of this project. Each of them having their own unique addition to our overall documentation. 
+* **These are all of our software artifacts that we created along with our progression of this project. Each of them having their own unique addition to our overall documentation.** 
 
 * [Agenda use case diagram](https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/use_case_diagrams/Agenda_use_case_diagram.jpg)
 * [Notification use case diagram](https://github.com/Khawk2000/GVSU-CIS350-jkj/blob/master/artifacts/use_case_diagrams/Notification%20System%20Use%20case.jpg)
